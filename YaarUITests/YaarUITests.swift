@@ -21,6 +21,16 @@ class YaarUITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testButtonTap() {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.buttons["Fetch Current Difficulty"].tap()
+        app.buttons["Fetch Current attempts"].tap()
+        app.buttons["Start"].tap()
+    }
 
     func testExample() throws {
         // UI tests must launch the application that they test.

@@ -3,18 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143C79FFD0337DE17A7D9058 /* Pods_Yaar_YaarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91210666690E3444B86697B /* Pods_Yaar_YaarUITests.framework */; };
+		3E623BA53064CE16D246C4BD /* Pods_Yaar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FEA018D8E31AB805EF5761 /* Pods_Yaar.framework */; };
+		96440D892641E8710006429C /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96440D882641E8710006429C /* UINavigationController+Extension.swift */; };
+		96440D922641F57E0006429C /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96440D912641F57E0006429C /* SlideInTransition.swift */; };
+		96C48752263B49FB00D18B35 /* YaarAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C48751263B49FB00D18B35 /* YaarAPIService.swift */; };
+		96C4875A263B4AF700D18B35 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C48759263B4AF700D18B35 /* Networking.swift */; };
+		96C48765263B4EBC00D18B35 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C48764263B4EBC00D18B35 /* AuthViewModel.swift */; };
+		96C48778263C8D6B00D18B35 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C48777263C8D6B00D18B35 /* AuthViewController.swift */; };
+		96C48785263CD95700D18B35 /* DataStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C48784263CD95700D18B35 /* DataStoreViewController.swift */; };
+		96C4878C263CE45300D18B35 /* DataStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C4878A263CE45300D18B35 /* DataStoreTableViewCell.swift */; };
+		96C4878D263CE45300D18B35 /* DataStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C4878B263CE45300D18B35 /* DataStoreTableViewCell.xib */; };
+		96C487A9263DA1A600D18B35 /* DataStoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C487A8263DA1A600D18B35 /* DataStoreViewModel.swift */; };
+		96C487DC263E32E000D18B35 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C487DB263E32E000D18B35 /* AlertBuilder.swift */; };
+		96C487F0263EC29A00D18B35 /* MockYaarAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C487EF263EC29A00D18B35 /* MockYaarAPIClient.swift */; };
+		96C487F8263EC4F200D18B35 /* YaarAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C487F7263EC4F100D18B35 /* YaarAPIProtocol.swift */; };
+		96C48800263F008B00D18B35 /* YaarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C487FF263F008A00D18B35 /* YaarModel.swift */; };
 		96FEF6742639F543007E4BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEF6732639F543007E4BD3 /* AppDelegate.swift */; };
 		96FEF6762639F543007E4BD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEF6752639F543007E4BD3 /* SceneDelegate.swift */; };
-		96FEF6782639F543007E4BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEF6772639F543007E4BD3 /* ViewController.swift */; };
+		96FEF6782639F543007E4BD3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEF6772639F543007E4BD3 /* MainViewController.swift */; };
 		96FEF67B2639F543007E4BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FEF6792639F543007E4BD3 /* Main.storyboard */; };
 		96FEF67D2639F545007E4BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FEF67C2639F545007E4BD3 /* Assets.xcassets */; };
 		96FEF6802639F545007E4BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FEF67E2639F545007E4BD3 /* LaunchScreen.storyboard */; };
 		96FEF68B2639F545007E4BD3 /* YaarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEF68A2639F545007E4BD3 /* YaarTests.swift */; };
 		96FEF6962639F545007E4BD3 /* YaarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEF6952639F545007E4BD3 /* YaarUITests.swift */; };
+		F30AC6E1CDABF759A52CB81D /* Pods_YaarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E847ADCFE92741BF40D37C6 /* Pods_YaarTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25FC260B3552EE3261A98BE2 /* Pods-YaarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaarTests.debug.xcconfig"; path = "Target Support Files/Pods-YaarTests/Pods-YaarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E847ADCFE92741BF40D37C6 /* Pods_YaarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YaarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5562E748E57E8E3D2046C4DC /* Pods-Yaar-YaarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yaar-YaarUITests.release.xcconfig"; path = "Target Support Files/Pods-Yaar-YaarUITests/Pods-Yaar-YaarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55FEA018D8E31AB805EF5761 /* Pods_Yaar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yaar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96440D882641E8710006429C /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		96440D912641F57E0006429C /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		96C48751263B49FB00D18B35 /* YaarAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaarAPIService.swift; sourceTree = "<group>"; };
+		96C48759263B4AF700D18B35 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		96C48764263B4EBC00D18B35 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		96C48777263C8D6B00D18B35 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		96C48784263CD95700D18B35 /* DataStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreViewController.swift; sourceTree = "<group>"; };
+		96C4878A263CE45300D18B35 /* DataStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTableViewCell.swift; sourceTree = "<group>"; };
+		96C4878B263CE45300D18B35 /* DataStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataStoreTableViewCell.xib; sourceTree = "<group>"; };
+		96C487A8263DA1A600D18B35 /* DataStoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreViewModel.swift; sourceTree = "<group>"; };
+		96C487DB263E32E000D18B35 /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		96C487EF263EC29A00D18B35 /* MockYaarAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockYaarAPIClient.swift; sourceTree = "<group>"; };
+		96C487F7263EC4F100D18B35 /* YaarAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaarAPIProtocol.swift; sourceTree = "<group>"; };
+		96C487FF263F008A00D18B35 /* YaarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaarModel.swift; sourceTree = "<group>"; };
 		96FEF6702639F543007E4BD3 /* Yaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FEF6732639F543007E4BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96FEF6752639F543007E4BD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96FEF6772639F543007E4BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96FEF6772639F543007E4BD3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96FEF67A2639F543007E4BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96FEF67C2639F545007E4BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96FEF67F2639F545007E4BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +84,11 @@
 		96FEF6912639F545007E4BD3 /* YaarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FEF6952639F545007E4BD3 /* YaarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaarUITests.swift; sourceTree = "<group>"; };
 		96FEF6972639F545007E4BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A114578CBEE37B4298109541 /* Pods-Yaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yaar.release.xcconfig"; path = "Target Support Files/Pods-Yaar/Pods-Yaar.release.xcconfig"; sourceTree = "<group>"; };
+		C2746BFDAF24A3AA460B207D /* Pods-YaarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaarTests.release.xcconfig"; path = "Target Support Files/Pods-YaarTests/Pods-YaarTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9BC39DFEE1C48CA3B7E918F /* Pods-Yaar-YaarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yaar-YaarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Yaar-YaarUITests/Pods-Yaar-YaarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D91210666690E3444B86697B /* Pods_Yaar_YaarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yaar_YaarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA7FE311B13509EAB35E49A /* Pods-Yaar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yaar.debug.xcconfig"; path = "Target Support Files/Pods-Yaar/Pods-Yaar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E623BA53064CE16D246C4BD /* Pods_Yaar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30AC6E1CDABF759A52CB81D /* Pods_YaarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,103 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143C79FFD0337DE17A7D9058 /* Pods_Yaar_YaarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C48750263B496C00D18B35 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				96C48751263B49FB00D18B35 /* YaarAPIService.swift */,
+				96C48759263B4AF700D18B35 /* Networking.swift */,
+				96C487F7263EC4F100D18B35 /* YaarAPIProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		96C4875E263B4CB900D18B35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96C487FF263F008A00D18B35 /* YaarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96C48762263B4E8100D18B35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				96C48764263B4EBC00D18B35 /* AuthViewModel.swift */,
+				96C487A8263DA1A600D18B35 /* DataStoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96C48763263B4E9100D18B35 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96FEF6772639F543007E4BD3 /* MainViewController.swift */,
+				96C48777263C8D6B00D18B35 /* AuthViewController.swift */,
+				96C48784263CD95700D18B35 /* DataStoreViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		96C48789263CE41E00D18B35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				96C4878A263CE45300D18B35 /* DataStoreTableViewCell.swift */,
+				96C4878B263CE45300D18B35 /* DataStoreTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		96C487DA263E328900D18B35 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				96440D882641E8710006429C /* UINavigationController+Extension.swift */,
+				96C487DB263E32E000D18B35 /* AlertBuilder.swift */,
+				96440D912641F57E0006429C /* SlideInTransition.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		96C487E3263E365E00D18B35 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				96FEF6752639F543007E4BD3 /* SceneDelegate.swift */,
+				96FEF6732639F543007E4BD3 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		96C487EA263E3C3600D18B35 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				96FEF67E2639F545007E4BD3 /* LaunchScreen.storyboard */,
+				96FEF6792639F543007E4BD3 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		96C487EE263EC26100D18B35 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				96C487EF263EC29A00D18B35 /* MockYaarAPIClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		96C48804263F00D300D18B35 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				96FEF67C2639F545007E4BD3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		96FEF6672639F543007E4BD3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +216,8 @@
 				96FEF6892639F545007E4BD3 /* YaarTests */,
 				96FEF6942639F545007E4BD3 /* YaarUITests */,
 				96FEF6712639F543007E4BD3 /* Products */,
+				B08CA1653E8D611660C9764E /* Pods */,
+				D134327FB83BC3B6C2FA3A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +234,15 @@
 		96FEF6722639F543007E4BD3 /* Yaar */ = {
 			isa = PBXGroup;
 			children = (
-				96FEF6732639F543007E4BD3 /* AppDelegate.swift */,
-				96FEF6752639F543007E4BD3 /* SceneDelegate.swift */,
-				96FEF6772639F543007E4BD3 /* ViewController.swift */,
-				96FEF6792639F543007E4BD3 /* Main.storyboard */,
-				96FEF67C2639F545007E4BD3 /* Assets.xcassets */,
-				96FEF67E2639F545007E4BD3 /* LaunchScreen.storyboard */,
+				96C487E3263E365E00D18B35 /* Application */,
+				96C4875E263B4CB900D18B35 /* Model */,
+				96C48789263CE41E00D18B35 /* Cell */,
+				96C48763263B4E9100D18B35 /* ViewController */,
+				96C48762263B4E8100D18B35 /* ViewModel */,
+				96C48750263B496C00D18B35 /* Network */,
+				96C48804263F00D300D18B35 /* Assets */,
+				96C487EA263E3C3600D18B35 /* StoryBoard */,
+				96C487DA263E328900D18B35 /* Utilities */,
 				96FEF6812639F545007E4BD3 /* Info.plist */,
 			);
 			path = Yaar;
@@ -113,6 +251,7 @@
 		96FEF6892639F545007E4BD3 /* YaarTests */ = {
 			isa = PBXGroup;
 			children = (
+				96C487EE263EC26100D18B35 /* Mocks */,
 				96FEF68A2639F545007E4BD3 /* YaarTests.swift */,
 				96FEF68C2639F545007E4BD3 /* Info.plist */,
 			);
@@ -128,6 +267,29 @@
 			path = YaarUITests;
 			sourceTree = "<group>";
 		};
+		B08CA1653E8D611660C9764E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7FE311B13509EAB35E49A /* Pods-Yaar.debug.xcconfig */,
+				A114578CBEE37B4298109541 /* Pods-Yaar.release.xcconfig */,
+				C9BC39DFEE1C48CA3B7E918F /* Pods-Yaar-YaarUITests.debug.xcconfig */,
+				5562E748E57E8E3D2046C4DC /* Pods-Yaar-YaarUITests.release.xcconfig */,
+				25FC260B3552EE3261A98BE2 /* Pods-YaarTests.debug.xcconfig */,
+				C2746BFDAF24A3AA460B207D /* Pods-YaarTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D134327FB83BC3B6C2FA3A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55FEA018D8E31AB805EF5761 /* Pods_Yaar.framework */,
+				D91210666690E3444B86697B /* Pods_Yaar_YaarUITests.framework */,
+				4E847ADCFE92741BF40D37C6 /* Pods_YaarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96FEF69A2639F545007E4BD3 /* Build configuration list for PBXNativeTarget "Yaar" */;
 			buildPhases = (
+				AE714CFD3430D64097DBC537 /* [CP] Check Pods Manifest.lock */,
 				96FEF66C2639F543007E4BD3 /* Sources */,
 				96FEF66D2639F543007E4BD3 /* Frameworks */,
 				96FEF66E2639F543007E4BD3 /* Resources */,
+				278CB7EA0F75E8167569FB6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96FEF69D2639F545007E4BD3 /* Build configuration list for PBXNativeTarget "YaarTests" */;
 			buildPhases = (
+				F107C200EB92C38B7DF1C967 /* [CP] Check Pods Manifest.lock */,
 				96FEF6822639F545007E4BD3 /* Sources */,
 				96FEF6832639F545007E4BD3 /* Frameworks */,
 				96FEF6842639F545007E4BD3 /* Resources */,
@@ -170,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96FEF6A02639F545007E4BD3 /* Build configuration list for PBXNativeTarget "YaarUITests" */;
 			buildPhases = (
+				86818392D04786F11EE9AF0B /* [CP] Check Pods Manifest.lock */,
 				96FEF68D2639F545007E4BD3 /* Sources */,
 				96FEF68E2639F545007E4BD3 /* Frameworks */,
 				96FEF68F2639F545007E4BD3 /* Resources */,
+				4EA44A1653AE9601C301188C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96FEF6802639F545007E4BD3 /* LaunchScreen.storyboard in Resources */,
+				96C4878D263CE45300D18B35 /* DataStoreTableViewCell.xib in Resources */,
 				96FEF67D2639F545007E4BD3 /* Assets.xcassets in Resources */,
 				96FEF67B2639F543007E4BD3 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +421,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		278CB7EA0F75E8167569FB6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yaar/Pods-Yaar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yaar/Pods-Yaar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yaar/Pods-Yaar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA44A1653AE9601C301188C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yaar-YaarUITests/Pods-Yaar-YaarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yaar-YaarUITests/Pods-Yaar-YaarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yaar-YaarUITests/Pods-Yaar-YaarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86818392D04786F11EE9AF0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yaar-YaarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE714CFD3430D64097DBC537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yaar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F107C200EB92C38B7DF1C967 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YaarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96FEF66C2639F543007E4BD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96FEF6782639F543007E4BD3 /* ViewController.swift in Sources */,
+				96C487A9263DA1A600D18B35 /* DataStoreViewModel.swift in Sources */,
+				96FEF6782639F543007E4BD3 /* MainViewController.swift in Sources */,
+				96C4875A263B4AF700D18B35 /* Networking.swift in Sources */,
+				96C48765263B4EBC00D18B35 /* AuthViewModel.swift in Sources */,
+				96C4878C263CE45300D18B35 /* DataStoreTableViewCell.swift in Sources */,
+				96C487DC263E32E000D18B35 /* AlertBuilder.swift in Sources */,
+				96C48778263C8D6B00D18B35 /* AuthViewController.swift in Sources */,
 				96FEF6742639F543007E4BD3 /* AppDelegate.swift in Sources */,
 				96FEF6762639F543007E4BD3 /* SceneDelegate.swift in Sources */,
+				96440D922641F57E0006429C /* SlideInTransition.swift in Sources */,
+				96C487F8263EC4F200D18B35 /* YaarAPIProtocol.swift in Sources */,
+				96C48785263CD95700D18B35 /* DataStoreViewController.swift in Sources */,
+				96440D892641E8710006429C /* UINavigationController+Extension.swift in Sources */,
+				96C48800263F008B00D18B35 /* YaarModel.swift in Sources */,
+				96C48752263B49FB00D18B35 /* YaarAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C487F0263EC29A00D18B35 /* MockYaarAPIClient.swift in Sources */,
 				96FEF68B2639F545007E4BD3 /* YaarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +717,7 @@
 		};
 		96FEF69B2639F545007E4BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA7FE311B13509EAB35E49A /* Pods-Yaar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +736,7 @@
 		};
 		96FEF69C2639F545007E4BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A114578CBEE37B4298109541 /* Pods-Yaar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +755,7 @@
 		};
 		96FEF69E2639F545007E4BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25FC260B3552EE3261A98BE2 /* Pods-YaarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +777,7 @@
 		};
 		96FEF69F2639F545007E4BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2746BFDAF24A3AA460B207D /* Pods-YaarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +799,7 @@
 		};
 		96FEF6A12639F545007E4BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BC39DFEE1C48CA3B7E918F /* Pods-Yaar-YaarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +819,7 @@
 		};
 		96FEF6A22639F545007E4BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5562E748E57E8E3D2046C4DC /* Pods-Yaar-YaarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
