@@ -1,0 +1,194 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: yaar1
+  namespace: default
+  uid: 399b123e-0478-44eb-b742-6c6e0d457210
+  resourceVersion: '26642'
+  creationTimestamp: '2021-05-06T01:05:56Z'
+  managedFields:
+    - manager: kubectl-create
+      operation: Update
+      apiVersion: v1
+      time: '2021-05-06T01:05:56Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:containers':
+            'k:{"name":"yaar"}':
+              .: {}
+              'f:command': {}
+              'f:image': {}
+              'f:imagePullPolicy': {}
+              'f:name': {}
+              'f:ports':
+                .: {}
+                'k:{"containerPort":1337,"protocol":"TCP"}':
+                  .: {}
+                  'f:containerPort': {}
+                  'f:protocol': {}
+              'f:readinessProbe':
+                .: {}
+                'f:failureThreshold': {}
+                'f:httpGet':
+                  .: {}
+                  'f:path': {}
+                  'f:port': {}
+                  'f:scheme': {}
+                'f:initialDelaySeconds': {}
+                'f:periodSeconds': {}
+                'f:successThreshold': {}
+                'f:timeoutSeconds': {}
+              'f:resources': {}
+              'f:terminationMessagePath': {}
+              'f:terminationMessagePolicy': {}
+          'f:dnsPolicy': {}
+          'f:enableServiceLinks': {}
+          'f:imagePullSecrets':
+            .: {}
+            'k:{"name":"myregistrykey"}':
+              .: {}
+              'f:name': {}
+          'f:restartPolicy': {}
+          'f:schedulerName': {}
+          'f:securityContext': {}
+          'f:terminationGracePeriodSeconds': {}
+    - manager: kubelet
+      operation: Update
+      apiVersion: v1
+      time: '2021-05-06T01:06:01Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:conditions':
+            'k:{"type":"ContainersReady"}':
+              .: {}
+              'f:lastProbeTime': {}
+              'f:lastTransitionTime': {}
+              'f:message': {}
+              'f:reason': {}
+              'f:status': {}
+              'f:type': {}
+            'k:{"type":"Initialized"}':
+              .: {}
+              'f:lastProbeTime': {}
+              'f:lastTransitionTime': {}
+              'f:status': {}
+              'f:type': {}
+            'k:{"type":"Ready"}':
+              .: {}
+              'f:lastProbeTime': {}
+              'f:lastTransitionTime': {}
+              'f:message': {}
+              'f:reason': {}
+              'f:status': {}
+              'f:type': {}
+          'f:containerStatuses': {}
+          'f:hostIP': {}
+          'f:podIP': {}
+          'f:podIPs':
+            .: {}
+            'k:{"ip":"172.17.0.3"}':
+              .: {}
+              'f:ip': {}
+          'f:startTime': {}
+spec:
+  volumes:
+    - name: default-token-g4tkg
+      secret:
+        secretName: default-token-g4tkg
+        defaultMode: 420
+  containers:
+    - name: yaar
+      image: 'yaar/yaar-interview-prime-hash-pow:latest'
+      command:
+        - echo
+        - SUCCESS
+      ports:
+        - containerPort: 1337
+          protocol: TCP
+      resources: {}
+      volumeMounts:
+        - name: default-token-g4tkg
+          readOnly: true
+          mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      readinessProbe:
+        httpGet:
+          path: /health/ready
+          port: 1337
+          scheme: HTTP
+        initialDelaySeconds: 30
+        timeoutSeconds: 3
+        periodSeconds: 10
+        successThreshold: 1
+        failureThreshold: 1
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      imagePullPolicy: Always
+  restartPolicy: Always
+  terminationGracePeriodSeconds: 30
+  dnsPolicy: ClusterFirst
+  serviceAccountName: default
+  serviceAccount: default
+  nodeName: minikube
+  securityContext: {}
+  imagePullSecrets:
+    - name: myregistrykey
+  schedulerName: default-scheduler
+  tolerations:
+    - key: node.kubernetes.io/not-ready
+      operator: Exists
+      effect: NoExecute
+      tolerationSeconds: 300
+    - key: node.kubernetes.io/unreachable
+      operator: Exists
+      effect: NoExecute
+      tolerationSeconds: 300
+  priority: 0
+  enableServiceLinks: true
+  preemptionPolicy: PreemptLowerPriority
+status:
+  phase: Pending
+  conditions:
+    - type: Initialized
+      status: 'True'
+      lastProbeTime: null
+      lastTransitionTime: '2021-05-06T01:05:56Z'
+    - type: Ready
+      status: 'False'
+      lastProbeTime: null
+      lastTransitionTime: '2021-05-06T01:05:56Z'
+      reason: ContainersNotReady
+      message: 'containers with unready status: [yaar]'
+    - type: ContainersReady
+      status: 'False'
+      lastProbeTime: null
+      lastTransitionTime: '2021-05-06T01:05:56Z'
+      reason: ContainersNotReady
+      message: 'containers with unready status: [yaar]'
+    - type: PodScheduled
+      status: 'True'
+      lastProbeTime: null
+      lastTransitionTime: '2021-05-06T01:05:56Z'
+  hostIP: 192.168.49.2
+  podIP: 172.17.0.3
+  podIPs:
+    - ip: 172.17.0.3
+  startTime: '2021-05-06T01:05:56Z'
+  containerStatuses:
+    - name: yaar
+      state:
+        waiting:
+          reason: ErrImagePull
+          message: >-
+            rpc error: code = Unknown desc = Error response from daemon: Head
+            https://registry-1.docker.io/v2/yaar/yaar-interview-prime-hash-pow/manifests/latest:
+            unauthorized: incorrect username or password
+      lastState: {}
+      ready: false
+      restartCount: 0
+      image: 'yaar/yaar-interview-prime-hash-pow:latest'
+      imageID: ''
+      started: false
+  qosClass: BestEffort
+
